@@ -19,8 +19,8 @@ st.write("Upload a baggage X-ray image to detect potential contraband using our 
 @st.cache_resource
 def load_model():
     # Update this path if you place your weights elsewhere
-    return YOLO('best.pt') 
-    #return YOLO('yolov8s.pt') #for test the UI
+    #return YOLO('best.pt') 
+    return YOLO('yolov8s.pt') #for test the UI
 
 try:
     model = load_model()
